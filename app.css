@@ -1,0 +1,13 @@
+#grid {
+    width: 500px;
+    height: 500px;
+    margin:auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.square {
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+    border: solid 2px yellowgreen;
+}
