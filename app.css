@@ -1,13 +1,31 @@
-#grid {
-    width: 500px;
-    height: 500px;
+#grid1 {
+    width: 800px;
+    height: 800px;
     margin:auto;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(10, 10%);
+    border: solid 2px blue;
+}
+#grid2 {
+    width: 800px;
+    height: 800px;
+    margin:auto;
+    display: grid;
+    grid-template-columns: repeat(9, calc(100%/9));
+    border: solid 2px blue;
+}
+#grid3 {
+    width: 800px;
+    height: 800px;
+    margin:auto;
+    display: grid;
+    grid-template-columns: repeat(7, calc(100%/7));
+    border: solid 2px blue;
 }
 
 .square {
-    width: calc(100% / 10);
-    height: calc(100% / 10);
     border: solid 2px yellowgreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
     <title>Document</title>
 </head>
 <body>
-    <h1>Sceglila tua difficoltà</h1>
-    <form name="gioco"  >
-        <input list="difficoltà" name="difficoltà " id="difficoltà">
-        <datalist id="difficoltà">
+    <form name="gioco"  method="" id="form">
+        <label for="difficoltà">Scegli difficoltà</label>
+        <select name="difficoltà" id="difficoltà">
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
-          </datalist>
-          <input type="submit" name="genera" id="difficoltà">
+        </select>
+          <button type="submit">Genera</button>
     </form>
     <script src="app.js"></script>
     
