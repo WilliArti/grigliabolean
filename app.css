@@ -29,3 +29,8 @@
     align-items: center;
     justify-content: center;
 }
+
+.square:hover {
+    background-color: red;
+    opacity: 50%;
+  }

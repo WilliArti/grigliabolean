@@ -1,6 +1,3 @@
-
-
-
 const form = document.getElementById('form')
 form.addEventListener("submit", function(e){
     e.preventDefault();
@@ -46,10 +43,6 @@ function game(n) {
 
     }
 }
-
-
-
-
 function creategrid(gridId) {
     const grid = document.createElement("div")
     grid.id = gridId
@@ -57,9 +50,9 @@ function creategrid(gridId) {
     
 
 }
-
 function createnewsquare() {
     const currentelement = document.createElement('div')
     currentelement.classList.add('square')
+    currentelement.addEventListener('click', function(){currentelement.style.backgroundColor = "red"})
     return currentelement
 }
